@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000500;
+  display: flex;
+}
+.saidbar {
+  background-color: #131b4988;
+  min-height: 100vh;
+  width: 70px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+.saidbar ul {
+  list-style: none;
+}
+.saidbar ul li {
+  padding: 10px;
+}
+.saidbar ul li a {
+  border-radius: 5px;
+  /* display: block; */
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  transition: 0.5s;
+}
+.saidbar ul li a i {
+  font-size: 25px;
+}
+.saidbar ul li a {
+  font-size: 18px;
+}
+.second-content .text:hover,
+.saidbar ul li a:hover {
+  background-color: rgb(78, 78, 82);
+}
+.btn-out {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.btn-out a {
+  background-color: rgb(175, 12, 12);
+}
+.saidbar:hover {
+  width: 400px;
+}
+.pro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  color: white;
+  margin-top: 15px;
+}
+.pro h3 {
+  font-size: 25px;
+}
+.saidbar .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 3px solid white;
+}
+.saidbar .profile img {
+  width: 100%;
+  height: 100%;
+}
+
+/* start content section */
+.content {
+  width: 100%;
+  padding: 15px 10px;
+}
+.content .head-content {
+  background-color: rgb(36, 54, 153);
+  margin: 10px 5px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  font-size: 20px;
+}
+.second-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background-color: rgb(61, 48, 48); */
+  margin: 5px;
+  justify-content: space-between;
+  color: white;
+  display: flex;
+  gap: 10px;
+}
+.second-content .text {
+  background-color: rgb(28, 28, 39);
+  height: 190px;
+  flex-basis: 190px;
+  flex-grow: 1;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.second-content .text i {
+  font-size: 30px;
+}
+.second-content .text span {
+  font-size: 25px;
+}
+.table-content {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 20px;
+  padding: 5px;
+  border-spacing: 9px;
+  color: white;
+}
+.table-content tr th,
+td {
+  height: 40px;
+  background-color: rgb(27, 39, 58);
+  border-radius: 5px;
+}
+.table-content tr th {
+  background-color: rgb(36, 54, 153);
+  padding: 5px;
+}
+
+.price {
+  background-color: rgba(0, 255, 0, 0.459);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.count {
+  background-color: rgba(255, 217, 0, 0.452);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+@media (max-width: 576px) {
+    .saidbar:hover a{
+        flex-wrap: wrap;
+    }
+}
+
+
+/* /border-spacing =>bettewn cells */
+/* flex-shrink بيمنع الضغط الي بيحصل علشان يتاسب العرض  */
+/* flex-baises=>علشان  اديه عرض محدد و ممكن اعمل له نمو من خلال flex-grow  و افصل بينهم ب جاب  */
